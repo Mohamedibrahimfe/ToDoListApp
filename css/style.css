@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(82, 82, 82);
+}
+.container{
+    margin: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.input{
+    padding: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(100,100,100,0.5);
+    border-radius: 6px;
+}
+.add{
+    padding: 10px 15px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 6px;
+    width: 80px;
+}
+.list-container{
+    background-color: rgb(231, 231, 231);
+    width: 550px;
+    min-height: 400px;
+    height: fit-content;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.listChildren{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-radius:6px;
+    margin:8px ;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.listChildren:hover{
+background-color: #9696964b;
+}
+.group{
+    text-align: center;
+}
+.delete{
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.delete:hover{
+    color: red;
+}
+.checked.listChildren{
+    text-decoration: line-through;
+}
+.deletei{
+    border: none;
+    outline: none;
+}
+.com{
+    margin: 15px;
+    /* background-color: hsl(0, 0%, 100%); */
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 150px;
+}
+.com::before{
+    /* content: ""; */
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-2%);
+}
+.comp-btn{
+    position: absolute;;
+    right: -140px;
+    padding: 10px 15px;
+    border-radius: 6px;
+} 
+.completed{
+    text-decoration: line-through;
+
+}
